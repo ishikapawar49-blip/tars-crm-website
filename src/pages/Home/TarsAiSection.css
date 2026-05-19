@@ -1,0 +1,232 @@
+.ai-section{
+  width:100%;
+  padding:40px 64px;
+  background:#f8fafc;
+  position:relative;
+  overflow:hidden;
+}
+
+.ai-section::before{
+  content:"";
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:1050px;
+  height:360px;
+  border-radius:999px;
+  background:
+  linear-gradient(
+    90deg,
+    rgba(177,128,252,.18) 0%,
+    rgba(0,205,253,.18) 100%
+  );
+
+  filter:blur(10px);
+
+  z-index:0;
+}
+
+.ai-container{
+  max-width:1280px;
+  margin:auto;
+
+  position:relative;
+  z-index:2;
+}
+
+/* BADGE */
+
+.ai-badge{
+  width:fit-content;
+  margin:0 auto 20px;
+
+  height:34px;
+  padding:0 14px;
+
+  border-radius:999px;
+
+  background:#ffffff;
+
+  border:1px solid #e6edf7;
+
+  display:flex;
+  align-items:center;
+  gap:6px;
+
+  font-size:13px;
+  font-weight:700;
+
+  color:#253dad;
+
+  box-shadow:
+  0 4px 14px rgba(0,0,0,.04);
+}
+
+.ai-badge svg{
+  font-size:15px;
+}
+
+/* HEADING */
+
+.ai-heading{
+  max-width:760px;
+
+  margin:0 auto;
+
+  text-align:center;
+
+  font-size:52px;
+  line-height:0.95;
+
+  letter-spacing:-3px;
+
+  font-weight:700;
+
+  color:#071133;
+}
+
+.ai-heading span{
+  background:linear-gradient(
+    90deg,
+    #4163E4 0%,
+    #00CDFD 100%
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* DESCRIPTION */
+
+.ai-description{
+  width:760px;
+  max-width:100%;
+
+  margin:26px auto 70px;
+
+  text-align:center;
+
+  font-size:18px;
+  line-height:1.7;
+
+  color:#667085;
+}
+
+/* GRID */
+
+.ai-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:22px;
+}
+
+/* CARD */
+
+.ai-card{
+  background:#ffffff;
+
+  border:1px solid #dce8f7;
+
+  border-top:2px solid #98e6ff;
+
+  border-radius:24px;
+
+  padding:26px;
+
+  min-height:172px;
+
+  transition:.25s ease;
+
+  box-shadow:
+  0 8px 24px rgba(15,23,42,.04);
+}
+
+.ai-card:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 20px 40px rgba(15,23,42,.08);
+}
+
+/* ICON */
+
+.ai-card-icon{
+  width:48px;
+  height:48px;
+
+  border-radius:16px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #B180FC 0%,
+    #0071DF 100%
+  );
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:18px;
+}
+
+.ai-card-icon svg{
+  color:white;
+  font-size:22px;
+}
+
+/* TITLE */
+
+.ai-card h3{
+  font-size:20px;
+  font-weight:700;
+
+  color:#111827;
+
+  margin-bottom:10px;
+}
+
+/* TEXT */
+
+.ai-card p{
+  font-size:15px;
+  line-height:1.6;
+
+  color:#667085;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1100px){
+
+  .ai-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .ai-heading{
+    font-size:54px;
+  }
+}
+
+@media (max-width:768px){
+
+  .ai-section{
+    padding:80px 24px;
+  }
+
+  .ai-grid{
+    grid-template-columns:1fr;
+  }
+
+  .ai-heading{
+    font-size:42px;
+  }
+
+  .ai-description{
+    font-size:16px;
+  }
+}

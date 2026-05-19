@@ -1,0 +1,335 @@
+.india-section{
+  width:100%;
+  padding:100px 64px;
+  background:#f8fafc;
+}
+
+.india-badge{
+  width: fit-content;
+  margin: 0 auto 18px;
+
+  height: 42px;
+  padding: 0 22px;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  box-shadow:
+    0 6px 18px rgba(15,23,42,.04);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #253DAD;
+}
+
+.india-flag{
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.india-heading{
+  text-align:center;
+
+  font-size:58px;
+  line-height:1;
+
+  letter-spacing:-2.4px;
+  font-weight:700;
+
+  color:#071133;
+
+  margin-bottom:18px;
+}
+
+.india-heading span{
+  background:linear-gradient(
+    90deg,
+    #4163E4 0%,
+    #00CDFD 100%
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.india-description{
+  width:720px;
+  max-width:100%;
+
+  margin:0 auto 48px;
+
+  text-align:center;
+
+  font-size:18px;
+  line-height:1.6;
+
+  color:#667085;
+}
+
+/* GRID */
+
+.india-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:14px;
+
+  margin-bottom:34px;
+}
+
+.india-card{
+  background:white;
+
+  border:1px solid #e6ebf2;
+
+  border-radius:18px;
+
+  padding:16px;
+
+  display:flex;
+  gap:14px;
+
+  align-items:flex-start;
+
+  box-shadow:
+  0 6px 18px rgba(15,23,42,.04);
+}
+
+.india-card-icon{
+  width:42px;
+  height:42px;
+
+  border-radius:14px;
+
+  background:linear-gradient(
+    135deg,
+    #253DAD 0%,
+    #0072D5 100%
+  );
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
+}
+
+.india-card-icon svg{
+  color:white;
+  font-size:20px;
+}
+
+.india-card h4{
+  font-size:16px;
+  font-weight:700;
+
+  color:#111827;
+
+  margin-bottom:4px;
+}
+
+.india-card p{
+  font-size:13px;
+  line-height:1.5;
+
+  color:#667085;
+}
+
+/* BOTTOM */
+
+.india-bottom{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  gap:18px;
+}
+
+/* INVOICE */
+
+.india-invoice-card,
+.india-workflow-card{
+  background:white;
+
+  border:1px solid #e7ebf2;
+
+  border-radius:24px;
+
+  padding:18px;
+
+  box-shadow:
+  0 10px 30px rgba(15,23,42,.05);
+}
+
+.india-invoice-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  margin-bottom:20px;
+}
+
+.india-invoice-top span{
+  font-size:11px;
+  font-weight:700;
+  color:#667085;
+}
+
+.india-invoice-top h3{
+  font-size:28px;
+  color:#111827;
+}
+
+.india-paid-tag{
+  background:#eafaf1;
+  color:#22c55e;
+
+  font-size:12px;
+  font-weight:700;
+
+  padding:6px 12px;
+  border-radius:999px;
+}
+
+.india-invoice-info{
+  display:flex;
+  justify-content:space-between;
+
+  margin-bottom:20px;
+}
+
+.india-invoice-info small{
+  display:block;
+  color:#667085;
+  margin-bottom:4px;
+}
+
+.india-invoice-info strong{
+  display:block;
+  color:#111827;
+}
+
+.india-invoice-info p{
+  font-size:12px;
+  color:#667085;
+}
+
+.india-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.india-table th{
+  text-align:left;
+  padding:10px 0;
+
+  font-size:13px;
+  color:#667085;
+}
+
+.india-table td{
+  padding:10px 0;
+
+  font-size:13px;
+
+  border-top:1px solid #eef2f7;
+}
+
+.india-total{
+  margin-top:12px;
+
+  display:flex;
+  justify-content:space-between;
+
+  font-size:18px;
+  font-weight:700;
+
+  color:#111827;
+}
+
+/* WORKFLOW */
+
+.india-workflow-card h3{
+  font-size:18px;
+  font-weight:700;
+
+  margin-bottom:20px;
+
+  color:#111827;
+}
+
+.india-workflow-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.india-step{
+  display:flex;
+  gap:12px;
+}
+
+.india-step-no{
+  width:26px;
+  height:26px;
+
+  border-radius:50%;
+
+  background:#2552d6;
+
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:12px;
+  font-weight:700;
+}
+
+.india-step h4{
+  font-size:15px;
+  font-weight:700;
+
+  color:#111827;
+}
+
+.india-step p{
+  font-size:13px;
+  color:#667085;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1024px){
+
+  .india-grid{
+    grid-template-columns:1fr;
+  }
+
+  .india-bottom{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .india-section{
+    padding:80px 20px;
+  }
+
+  .india-heading{
+    font-size:42px;
+  }
+
+}
