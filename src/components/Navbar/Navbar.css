@@ -141,3 +141,195 @@ body{
   /* background: #0f4fe0; */
   background-color: #4566D9;
 }
+
+/* responsive */
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.mobile-menu-btn{
+  display:none;
+}
+
+.mobile-menu{
+  display:none;
+}
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width:1400px){
+
+  .navbar{
+    padding:0 24px;
+  }
+
+  .navbar-center{
+    gap:28px;
+  }
+}
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width:1200px){
+
+  .navbar{
+    padding:0 20px;
+  }
+
+  .navbar-center{
+    gap:22px;
+    margin-left:20px;
+  }
+
+  .demo-btn{
+    padding:0 16px;
+  }
+
+  .trial-btn{
+    padding:0 18px;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width:992px){
+
+  .navbar-center{
+    gap:18px;
+  }
+
+  .navbar-center a{
+    font-size:13px;
+  }
+
+  .demo-btn{
+    display:none;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .navbar{
+    height:64px;
+    padding:0 16px;
+  }
+
+  .navbar-center,
+  .navbar-right{
+    display:none;
+  }
+
+  .mobile-menu-btn{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    background:white;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+    color:#111827;
+  }
+
+  .mobile-menu{
+    position:absolute;
+
+    top:64px;
+    left:0;
+
+    width:100%;
+
+    background:#f6f8fb;
+
+    border-top:1px solid #edf0f4;
+
+    padding:20px 16px;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    z-index:999;
+  }
+
+  .mobile-menu.open{
+    display:flex;
+  }
+
+  .mobile-menu a{
+    text-decoration:none;
+
+    color:#111827;
+
+    font-size:15px;
+    font-weight:500;
+  }
+
+  .mobile-login-btn,
+  .mobile-demo-btn,
+  .mobile-trial-btn{
+
+    width:100%;
+    height:46px;
+
+    border-radius:999px;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+  }
+
+  .mobile-login-btn{
+    border:1px solid #e5e7eb;
+    background:white;
+  }
+
+  .mobile-demo-btn{
+    border:none;
+    background:white;
+  }
+
+  .mobile-trial-btn{
+    border:none;
+    background:#155eef;
+    color:white;
+  }
+}
+
+/* =========================
+   EXTRA SMALL
+========================= */
+
+@media (max-width:360px){
+
+  .logo-text{
+    font-size:18px;
+  }
+
+  .logo-circle{
+    width:24px;
+    height:24px;
+    font-size:11px;
+  }
+}

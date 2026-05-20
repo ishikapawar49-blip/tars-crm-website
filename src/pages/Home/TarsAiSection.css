@@ -219,8 +219,8 @@
   }
 
   .ai-grid{
-    grid-template-columns:1fr;
-  }
+  grid-template-columns:repeat(2,1fr);
+}
 
   .ai-heading{
     font-size:42px;
@@ -228,5 +228,204 @@
 
   .ai-description{
     font-size:16px;
+  }
+}
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1400px){
+
+  .ai-section{
+    padding: 50px 48px;
+  }
+
+  .ai-heading{
+    font-size: 48px;
+  }
+
+  .ai-section::before{
+    width: 900px;
+  }
+}
+
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width: 1200px){
+
+  .ai-section{
+    padding: 60px 36px;
+  }
+
+  .ai-grid{
+    gap: 18px;
+  }
+
+  .ai-card{
+    padding: 22px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 992px){
+
+  .ai-section{
+    padding: 70px 28px;
+  }
+
+  .ai-heading{
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .ai-description{
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .ai-grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+  }
+
+  .ai-card{
+    min-height: auto;
+  }
+
+  .ai-section::before{
+    width: 700px;
+    height: 300px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .ai-section{
+    padding: 70px 20px;
+  }
+
+  .ai-heading{
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .ai-description{
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .ai-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .ai-card h3{
+    font-size: 18px;
+  }
+
+  .ai-card p{
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px){
+
+  .ai-section{
+    padding: 60px 16px;
+  }
+
+  .ai-badge{
+    font-size: 12px;
+  }
+
+  .ai-heading{
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  .ai-description{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .ai-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .ai-card{
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .ai-card-icon{
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+
+  .ai-card-icon svg{
+    font-size: 20px;
+  }
+
+  .ai-card h3{
+    font-size: 17px;
+  }
+
+  .ai-card p{
+    font-size: 13px;
+  }
+
+  .ai-section::before{
+    width: 500px;
+    height: 250px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px){
+
+  .ai-section{
+    padding: 55px 12px;
+  }
+
+  .ai-heading{
+    font-size: 26px;
+  }
+
+  .ai-description{
+    font-size: 13px;
+  }
+
+  .ai-card{
+    padding: 18px;
+  }
+
+  .ai-card h3{
+    font-size: 16px;
+  }
+
+  .ai-card p{
+    font-size: 12px;
   }
 }

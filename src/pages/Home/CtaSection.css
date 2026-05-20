@@ -238,3 +238,218 @@
     font-size:14px;
   }
 }
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1400px){
+
+  .finalcta-section{
+    padding: 60px 24px 90px;
+  }
+
+  .finalcta-box{
+    padding: 52px 36px;
+  }
+
+  .finalcta-heading{
+    font-size: 48px;
+  }
+
+  .finalcta-description{
+    max-width: 860px;
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width: 1200px){
+
+  .finalcta-box{
+    padding: 50px 32px;
+  }
+
+  .finalcta-heading{
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .finalcta-description{
+    font-size: 17px;
+  }
+
+  .finalcta-glow{
+    width: 340px;
+    height: 340px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 992px){
+
+  .finalcta-section{
+    padding: 60px 20px 80px;
+  }
+
+  .finalcta-box{
+    border-radius: 34px;
+    padding: 48px 28px;
+  }
+
+  .finalcta-heading{
+    font-size: 40px;
+    line-height: 1.05;
+    letter-spacing: -1.8px;
+  }
+
+  .finalcta-description{
+    font-size: 16px;
+    margin-bottom: 38px;
+  }
+
+  .finalcta-primary,
+  .finalcta-secondary{
+    font-size: 16px;
+    padding: 0 22px;
+  }
+
+  .finalcta-glow{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .finalcta-box{
+    padding: 60px 24px;
+    border-radius: 28px;
+  }
+
+  .finalcta-heading{
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .finalcta-description{
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .finalcta-buttons{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .finalcta-primary,
+  .finalcta-secondary{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .finalcta-note{
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px){
+
+  .finalcta-section{
+    padding: 50px 16px 70px;
+  }
+
+  .finalcta-box{
+    padding: 50px 18px;
+    border-radius: 24px;
+  }
+
+  .finalcta-heading{
+    font-size: 30px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .finalcta-description{
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .finalcta-primary,
+  .finalcta-secondary{
+    height: 50px;
+    font-size: 15px;
+    border-radius: 16px;
+  }
+
+  .finalcta-primary svg,
+  .finalcta-secondary svg{
+    font-size: 18px;
+  }
+
+  .finalcta-note{
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .finalcta-glow{
+    width: 240px;
+    height: 240px;
+    left: -80px;
+    bottom: -90px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px){
+
+  .finalcta-section{
+    padding: 45px 12px 60px;
+  }
+
+  .finalcta-box{
+    padding: 42px 16px;
+  }
+
+  .finalcta-heading{
+    font-size: 26px;
+  }
+
+  .finalcta-description{
+    font-size: 13px;
+  }
+
+  .finalcta-primary,
+  .finalcta-secondary{
+    height: 46px;
+    font-size: 14px;
+  }
+
+  .finalcta-note{
+    font-size: 11px;
+  }
+}

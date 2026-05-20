@@ -491,3 +491,233 @@ box-shadow:
   color: #6b7280;
   font-weight: 500;
 }
+
+
+/* RESPONSIVE */
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1400px) {
+
+  .hero{
+    padding: 42px 40px 30px;
+  }
+
+  .hero-title{
+    font-size: 54px;
+  }
+
+  .hero-dashboard-card{
+    width: 500px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1100px){
+
+  .hero{
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 32px;
+  }
+
+  .hero-left,
+  .hero-right{
+    width: 100%;
+  }
+
+  .hero-left{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-description{
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .hero-buttons{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-features{
+    justify-content: center;
+  }
+
+  .hero-dashboard-card{
+    width: min(100%, 700px);
+    height: auto;
+  }
+
+  .hero-whatsapp-card{
+    left: -10px;
+    top: 90px;
+  }
+
+  .hero-ai-card{
+    right: -10px;
+    bottom: 20px;
+  }
+
+  .hero-invoice-pill{
+    left: 20px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .hero{
+    padding: 40px 20px 80px;
+    gap: 40px;
+  }
+
+  .hero-title{
+    font-size: 46px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+  }
+
+  .hero-description{
+    font-size: 15px;
+  }
+
+  .hero-buttons{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-trial-btn,
+  .hero-demo-btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-dashboard-card{
+    width: 100%;
+    padding: 12px;
+  }
+
+  .hero-dashboard-topbar p{
+    font-size: 12px;
+  }
+
+  .hero-stats-grid{
+    flex-wrap: wrap;
+  }
+
+  .hero-stat-card{
+    min-width: calc(50% - 8px);
+  }
+
+  .hero-floating-card{
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .hero-right{
+    flex-direction: column;
+  }
+
+  .hero-invoice-pill{
+    position: static;
+    margin-top: 16px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+  .hero{
+    padding: 32px 16px 60px;
+  }
+
+  .hero-badge{
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  .hero-title{
+    font-size: 34px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero-features{
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .hero-feature-item{
+    font-size: 12px;
+  }
+
+  .hero-dashboard-topbar{
+    padding: 0 10px;
+  }
+
+  .hero-dashboard-topbar p{
+    display: none;
+  }
+
+  .hero-top-search{
+    width: 50px;
+  }
+
+  .hero-stat-card{
+    min-width: 100%;
+  }
+
+  .hero-stat-card h3{
+    font-size: 18px;
+  }
+
+  .hero-head{
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .hero-head span{
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .hero-pipeline-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .hero-forecast-box{
+    height: 120px;
+  }
+
+  .hero-whatsapp-card,
+  .hero-ai-card{
+    width: 100%;
+  }
+
+  .hero-floating-card{
+    padding: 12px;
+  }
+}

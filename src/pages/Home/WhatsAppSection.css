@@ -275,3 +275,219 @@
   }
 
 }
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1400px){
+
+  .wa-section{
+    padding: 40px 48px;
+    gap: 60px;
+  }
+
+  .wa-heading{
+    font-size: 48px;
+  }
+
+  .wa-chat-card{
+    width: 480px;
+  }
+}
+
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width: 1200px){
+
+  .wa-left{
+    max-width: 100%;
+  }
+
+  .wa-heading{
+    text-align: center;
+  }
+
+  .wa-description{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .wa-badge{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wa-features-grid{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 992px){
+
+  .wa-section{
+    padding: 80px 28px;
+    gap: 50px;
+  }
+
+  .wa-heading{
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .wa-description{
+    font-size: 16px;
+  }
+
+  .wa-chat-card{
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .wa-section{
+    padding: 72px 20px;
+    gap: 40px;
+  }
+
+  .wa-heading{
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .wa-description{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .wa-features-grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 14px;
+  }
+
+  .wa-feature-card{
+    padding: 18px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px){
+
+  .wa-section{
+    padding: 64px 16px;
+  }
+
+  .wa-badge{
+    font-size: 12px;
+  }
+
+  .wa-heading{
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  .wa-description{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .wa-features-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .wa-feature-card{
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .wa-chat-card{
+    padding: 14px;
+    border-radius: 22px;
+  }
+
+  .wa-chat-header{
+    gap: 10px;
+  }
+
+  .wa-chat-user h4{
+    font-size: 14px;
+  }
+
+  .wa-chat-user p{
+    font-size: 12px;
+  }
+
+  .wa-hot-tag{
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .wa-msg{
+    max-width: 100%;
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .wa-suggestion{
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px){
+
+  .wa-section{
+    padding: 56px 12px;
+  }
+
+  .wa-heading{
+    font-size: 26px;
+  }
+
+  .wa-description{
+    font-size: 13px;
+  }
+
+  .wa-feature-card h4{
+    font-size: 15px;
+  }
+
+  .wa-feature-card p{
+    font-size: 13px;
+  }
+
+  .wa-msg{
+    font-size: 13px;
+  }
+
+  .wa-suggestion{
+    font-size: 13px;
+  }
+}

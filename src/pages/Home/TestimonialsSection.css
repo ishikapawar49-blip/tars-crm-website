@@ -136,20 +136,239 @@
   color:#667085;
 }
 
-@media(max-width:1100px){
+
+/* responsive */
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1400px){
+
+  .love-section{
+    padding: 70px 48px;
+  }
 
   .love-grid{
-    grid-template-columns:1fr 1fr;
+    gap: 18px;
   }
 }
 
-@media(max-width:768px){
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width: 1200px){
 
   .love-section{
-    padding:80px 24px;
+    padding: 70px 36px;
+  }
+
+  .love-card{
+    padding: 22px;
+  }
+
+  .love-quote{
+    min-height: 110px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 992px){
+
+  .love-section{
+    padding: 70px 28px;
+  }
+
+  .love-heading{
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .love-description{
+    font-size: 16px;
+    margin-bottom: 50px;
   }
 
   .love-grid{
-    grid-template-columns:1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 14px;
   }
+
+  .love-card{
+    padding: 18px;
+  }
+
+  .love-quote{
+    font-size: 14px;
+    min-height: 140px;
+  }
+
+  .love-user h4{
+    font-size: 15px;
+  }
+
+  .love-user span{
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .love-section{
+    padding: 70px 20px;
+  }
+
+  .love-heading{
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .love-description{
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .love-grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 14px;
+  }
+
+  .love-quote{
+    min-height: auto;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px){
+
+  .love-section{
+    padding: 60px 16px;
+  }
+
+  .love-heading{
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  .love-description{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+
+  .love-grid{
+  display: flex;
+  overflow-x: auto;
+  gap: 14px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.love-grid::-webkit-scrollbar{
+  display: none;
+}
+
+  .love-card{
+  flex: 0 0 88%;
+  scroll-snap-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+  .love-stars svg{
+    font-size: 16px;
+  }
+
+  .love-quote{
+    font-size: 14px;
+  }
+
+  .love-user{
+    gap: 12px;
+  }
+
+  .love-avatar{
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px){
+
+  .love-section{
+    padding: 55px 12px;
+  }
+
+  .love-heading{
+    font-size: 26px;
+  }
+
+  .love-description{
+    font-size: 13px;
+  }
+
+  .love-card{
+    padding: 16px;
+  }
+
+  .love-quote{
+    font-size: 13px;
+  }
+
+  .love-user h4{
+    font-size: 14px;
+  }
+
+  .love-user span{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:640px){
+
+  .love-grid{
+    display:flex;
+    overflow-x:auto;
+    gap:14px;
+
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+
+    scrollbar-width:none;
+
+    padding:0 4px;
+  }
+
+  .love-grid::-webkit-scrollbar{
+    display:none;
+  }
+
+  .love-card{
+    flex:0 0 calc(100% - 30px);
+    scroll-snap-align:center;
+  }
+
 }

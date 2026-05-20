@@ -87,3 +87,195 @@
     transform: translateX(-50%);
   }
 }
+
+/* RESPONSIVE */
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1200px){
+
+  .trusted-section{
+    padding: 64px 0 72px;
+  }
+
+  .marquee-track{
+    gap: 50px;
+  }
+
+  .marquee-track span{
+    font-size: 26px;
+  }
+
+  .stat-item h2{
+    font-size: 34px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 992px){
+
+  .trusted-heading{
+    margin-bottom: 42px;
+    padding: 0 20px;
+  }
+
+  .marquee{
+    margin-bottom: 42px;
+  }
+
+  .marquee-track{
+    gap: 42px;
+  }
+
+  .marquee-track span{
+    font-size: 22px;
+  }
+
+  .stats-container{
+    padding: 0 30px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat-item{
+    width: calc(50% - 12px);
+  }
+
+  .stat-item h2{
+    font-size: 32px;
+  }
+
+  .stat-item p{
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .trusted-section{
+    padding: 56px 0 64px;
+  }
+
+  .trusted-heading{
+    font-size: 13px;
+    letter-spacing: 1.6px;
+    margin-bottom: 36px;
+    padding: 0 16px;
+  }
+
+  .marquee{
+    margin-bottom: 40px;
+  }
+
+  .marquee-track{
+    gap: 36px;
+  }
+
+  .marquee-track span{
+    font-size: 20px;
+  }
+
+  .stats-container{
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .stat-item{
+    width: calc(50% - 15px);
+  }
+
+  .stat-item h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .stat-item p{
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+  .trusted-section{
+    padding: 48px 0 56px;
+  }
+
+  .trusted-heading{
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    margin-bottom: 28px;
+    padding: 0 20px;
+    line-height: 1.5;
+  }
+
+  .marquee{
+    margin-bottom: 34px;
+  }
+
+  .marquee-track{
+    gap: 28px;
+    animation-duration: 18s;
+  }
+
+  .marquee-track span{
+    font-size: 18px;
+  }
+
+  .stats-container{
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 16px;
+  }
+
+  .stat-item{
+    width: 100%;
+  }
+
+  .stat-item h2{
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .stat-item p{
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px){
+
+  .trusted-heading{
+    font-size: 11px;
+  }
+
+  .marquee-track span{
+    font-size: 16px;
+  }
+
+  .stat-item h2{
+    font-size: 22px;
+  }
+
+  .stat-item p{
+    font-size: 13px;
+  }
+}

@@ -12,7 +12,7 @@ const testimonials = [
     role: "Founder, Saffron Foods",
   },
 
-  {
+  { 
     quote:
       '"WhatsApp CRM is a game changer. Our reps now respond to leads in under 2 minutes."',
     metric: "3.2× conversion",

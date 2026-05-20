@@ -390,3 +390,203 @@
 .pipe-warning-box svg{
   color: #F6B322;
 }
+
+/* RESPONSIVE */
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1200px){
+
+  .pipe-section{
+    padding: 90px 24px;
+  }
+
+  .pipe-heading{
+    font-size: 46px;
+  }
+
+  .pipe-columns{
+    gap: 14px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 992px){
+
+  .pipe-section{
+    padding: 80px 20px;
+  }
+
+  .pipe-heading{
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  .pipe-description{
+    font-size: 16px;
+    margin-bottom: 56px;
+  }
+
+  .pipe-board{
+    padding: 18px;
+  }
+
+  .pipe-board-top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .pipe-board-actions{
+    width: 100%;
+  }
+
+  .pipe-columns{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .pipe-stats{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .pipe-stat-box:last-child{
+    grid-column: span 2;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .pipe-section{
+    padding: 70px 16px;
+  }
+
+  .pipe-heading{
+    font-size: 34px;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .pipe-description{
+    font-size: 15px;
+    margin-bottom: 44px;
+  }
+
+  .pipe-board{
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .pipe-columns{
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+  }
+
+  .pipe-stat-row h3{
+    font-size: 28px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px){
+
+  .pipe-badge{
+    font-size: 11px;
+  }
+
+  .pipe-heading{
+    font-size: 30px;
+  }
+
+  .pipe-description{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .pipe-board-top h3{
+    font-size: 20px;
+  }
+
+  .pipe-board-top p{
+    font-size: 13px;
+  }
+
+  .pipe-board-actions{
+    flex-direction: column;
+  }
+
+  .pipe-filter-btn,
+  .pipe-newdeal-btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pipe-columns{
+    grid-template-columns: 1fr;
+  }
+
+  .pipe-stats{
+    grid-template-columns: 1fr;
+  }
+
+  .pipe-stat-box:last-child{
+    grid-column: auto;
+  }
+
+  .pipe-stat-row h3{
+    font-size: 26px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px){
+
+  .pipe-section{
+    padding: 60px 12px;
+  }
+
+  .pipe-heading{
+    font-size: 26px;
+  }
+
+  .pipe-description{
+    font-size: 13px;
+  }
+
+  .pipe-board{
+    padding: 12px;
+  }
+
+  .pipe-deal-card{
+    padding: 12px;
+  }
+
+  .pipe-deal-top h5{
+    font-size: 14px;
+  }
+
+  .pipe-amount{
+    font-size: 14px;
+  }
+
+  .pipe-stat-row h3{
+    font-size: 22px;
+  }
+}
