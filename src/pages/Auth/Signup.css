@@ -1,0 +1,381 @@
+html,
+body,
+#root{
+  width:100%;
+  height:100%;
+  margin:0;
+  overflow:hidden;
+}
+
+.signupx-page{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:52% 48%;
+}
+
+/* LEFT */
+
+.signupx-left{
+  background:
+  radial-gradient(
+    circle at top left,
+    rgba(50,80,200,.35),
+    transparent 35%
+  ),
+  linear-gradient(
+    180deg,
+    #05295a 0%,
+    #00183f 100%
+  );
+}
+
+.signupx-content{
+  height:100vh;
+  padding:16px 24px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transform:scale(.76);
+  transform-origin:left center;
+}
+
+.signupx-content h1{
+  font-size:42px;
+  line-height:1.05;
+  font-weight:700;
+  color:white;
+  max-width:430px;
+}
+
+.signupx-content h1 span{
+  color:#20b5ff;
+}
+
+.signupx-content p{
+  margin-top:12px;
+  font-size:15px;
+  line-height:1.6;
+  color:#b2c3db;
+  max-width:520px;
+}
+
+.signupx-image-card{
+  margin-top:14px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:12px;
+}
+
+.signupx-image-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:14px;
+}
+
+.signupx-image-dots{
+  display:flex;
+  gap:6px;
+}
+
+.signupx-image-dots span{
+  width:6px;
+  height:6px;
+
+  border-radius:50%;
+  background:#667085;
+}
+
+.signupx-image-line{
+  width:80px;
+  height:5px;
+
+  border-radius:20px;
+  background:#3f5c86;
+}
+
+.signupx-image-card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+
+  border-radius:12px;
+}
+
+.signupx-badges{
+ margin-top:12px;
+  font-size:10px;
+  display:flex;
+  gap:18px;
+  color:#b2c3db;
+}
+
+.signupx-badges span{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+/* RIGHT */
+.signupx-right{
+  background:#f8fafc;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  padding:6px 24px;
+  position:relative;
+}
+
+.signupx-top-icons{
+  display:flex;
+  justify-content:flex-end;
+  gap:12px;
+  margin-bottom:8px;
+}
+
+.signupx-top-icons button{
+  border:none;
+  background:none;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.signupx-form-wrap{
+  width:100%;
+  max-width:500px;
+  margin:0 auto;
+  transform:scale(.76);
+  transform-origin:top center;
+}
+
+.signupx-small-tag{
+  color:#1677ff;
+  font-size:11px;
+  font-weight:700;
+}
+
+.signupx-header-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:6px;
+}
+
+.signupx-header-row h2{
+  font-size:28px;
+  color:#071133;
+}
+
+.signupx-header-row span{
+  font-size:12px;
+  color:#667085;
+}
+
+.signupx-progress{
+  margin:14px 0 24px;
+  height:4px;
+  background:#e4e7ec;
+  border-radius:999px;
+}
+
+.signupx-progress div{
+  width:40%;
+  height:100%;
+  background:#1677ff;
+  border-radius:999px;
+}
+
+.signupx-subtext{
+  color:#667085;
+  line-height:1.7;
+  margin-bottom:14px;
+  font-size:15px;
+}
+
+.signupx-socials{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.signupx-socials button{
+  height:50px;
+  border:1px solid #dce3ee;
+  background:white;
+  border-radius:12px;
+  cursor:pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+}
+
+.signupx-divider{
+  text-align:center;
+  margin:14px 0;
+  font-size:11px;
+  letter-spacing:2px;
+  color:#98a2b3;
+}
+
+.signupx-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.signupx-form-wrap label{
+  display:block;
+  margin-top:8px;
+  margin-bottom:4px;
+  font-size:11px;
+  font-weight:700;
+}
+
+.signupx-form-wrap input:not([type="checkbox"]){
+  width:100%;
+  height:42px;
+  border:1px solid #dce3ee;
+  border-radius:10px;
+  padding:0 14px;
+  box-sizing:border-box;
+}
+
+.signupx-phone{
+  display:flex;
+}
+
+.signupx-phone span{
+  width:58px;
+  border:1px solid #dce3ee;
+  border-right:none;
+  border-radius:10px 0 0 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.signupx-phone input{
+  border-radius:0 10px 10px 0;
+}
+
+.signupx-password{
+  position:relative;
+}
+
+.signupx-password svg{
+  position:absolute;
+  right:14px;
+  top:16px;
+}
+
+.signupx-strength{
+  display:flex;
+  gap:6px;
+  margin-top:12px;
+}
+
+.signupx-strength span{
+  height:4px;
+  flex:1;
+  background:#dce3ee;
+}
+
+.signupx-strength .active{
+  background:#1677ff;
+}
+
+.signupx-strength-text{
+  margin-top:6px;
+
+  text-align:right;
+
+  font-size:10px;
+
+  color:#1677ff;
+}
+
+.signupx-check{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  margin-top:10px;
+
+  font-size:11px;
+  color:#667085;
+}
+
+.signupx-check input{
+  width:12px;
+  height:12px;
+  accent-color:#1677ff;
+  margin:0;
+}
+
+.signupx-check label{
+  margin:0 !important;
+  font-size:11px !important;
+  font-weight:400 !important;
+}
+
+.signupx-main-btn{
+  width:100%;
+  height:54px;
+
+  margin-top:20px;
+
+  border:none;
+  border-radius:14px;
+
+  color:white;
+  font-weight:600;
+
+  cursor:pointer;
+
+  background:
+  linear-gradient(
+    90deg,
+    #253dad,
+    #0072d5
+  );
+}
+
+.signupx-login-link{
+  text-align:center;
+  margin-top:12px;
+}
+
+.signupx-login-link a{
+  margin-left:6px;
+  color:#1677ff;
+  text-decoration:none;
+}
+
+.signupx-footer{
+  position:absolute;
+  bottom:12px;
+  left:24px;
+  right:24px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  font-size:9px;
+  color:#98a2b3;
+}
+
+.signupx-footer div{
+  display:flex;
+  gap:20px;
+}
+
+.signupx-footer a{
+  text-decoration:none;
+  color:#98a2b3;
+}

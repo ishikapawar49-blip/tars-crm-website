@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -22,7 +23,12 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-right">
-        <button className="login-btn">Login</button>
+        <button
+  className="login-btn"
+  onClick={() => window.location.href = "/login"}
+>
+  Login
+</button>
 
         <button className="demo-btn">
           Book Demo
