@@ -1,4 +1,5 @@
 import "./ResetPassword.css";
+import { useNavigate } from "react-router-dom";
 
 import {
   FiHelpCircle,
@@ -13,6 +14,8 @@ import {
 import { LuKeyRound } from "react-icons/lu";
 
 const ResetPassword = () => {
+   const navigate = useNavigate();
+   
   return (
     <div className="resetx-page">
 
@@ -115,9 +118,12 @@ const ResetPassword = () => {
 
           </div>
 
-          <button className="resetx-btn">
-            Update Password
-          </button>
+          <button
+  className="resetx-btn"
+  onClick={() => navigate("/otp-verification")}
+>
+  Update Password
+</button>
 
         </div>
 

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./ForgotPassword.css";
 
 import {
@@ -16,6 +16,9 @@ import {
 } from "react-icons/ri";
 
 const ForgotPassword = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="forgotx-page">
 
@@ -96,13 +99,13 @@ const ForgotPassword = () => {
 
           </div>
 
-          <button className="forgotx-btn">
-
-            Send reset link
-
-            <FiArrowRight />
-
-          </button>
+          <button
+  className="forgotx-btn"
+  onClick={() => window.location.href = "/reset-password"}
+>
+  Send reset link
+  <FiArrowRight />
+</button>
 
           <div className="forgotx-divider" />
 

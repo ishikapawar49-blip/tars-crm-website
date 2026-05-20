@@ -1,11 +1,3 @@
-/* html,
-body,
-#root{
-  width:100%;
-  height:100%;
-  margin:0;
-} */
-
 *{
   box-sizing:border-box;
   font-family:Inter,sans-serif;
@@ -14,7 +6,7 @@ body,
 .otpx-page{
   width:100%;
   height:100vh;
-  overflow:hidden;
+  /* overflow:hidden; */
   display:grid;
   grid-template-columns:50% 50%;
 }
@@ -363,4 +355,261 @@ body,
   text-decoration:none;
   color:#667085;
   margin-left:12px;
+}
+
+/* RESPONSIVE */
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width:1400px){
+
+  .otpx-content h1{
+    font-size:52px;
+  }
+
+  .otpx-image-box{
+    height:280px;
+  }
+}
+
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width:1200px){
+
+  .otpx-content{
+    padding:28px 20px;
+  }
+
+  .otpx-content h1{
+    font-size:46px;
+  }
+
+  .otpx-content p{
+    font-size:15px;
+  }
+
+  .otpx-image-box{
+    height:240px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width:992px){
+
+  .otpx-page{
+    grid-template-columns:1fr;
+  }
+
+  .otpx-left{
+    display:none;
+  }
+
+  .otpx-right{
+  min-height:100vh;
+  padding:24px;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+}
+
+  .otpx-card{
+    max-width:520px;
+     width:100%;
+  }
+
+.otpx-footer{
+  position:static;
+
+  margin-top:24px;
+
+  width:100%;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+
+  text-align:center;
+
+  gap:10px;
+}
+
+.otpx-footer div{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+}
+
+.otpx-footer a{
+  margin-left:0;
+}
+
+.otpx-top-icons{
+  position:static;
+  align-self:flex-end;
+  margin-bottom:20px;
+}
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width:768px){
+
+  .otpx-right{
+    padding:20px;
+  }
+
+  .otpx-card{
+    max-width:100%;
+    padding:24px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:640px){
+
+  .otpx-page{
+    min-height:100vh;
+    display:block;
+  }
+
+  .otpx-right{
+    min-height:auto;
+    padding:16px;
+    display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  }
+
+  .otpx-top-icons{
+    position:static;
+    justify-content:flex-end;
+    margin-bottom:16px;
+  }
+
+  .otpx-card{
+     width:100%;
+    max-width:100%;
+    padding:20px;
+    border-radius:18px;
+  }
+
+  .otpx-tabs{
+    gap:12px;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+
+  .otpx-tabs::-webkit-scrollbar{
+    display:none;
+  }
+
+  .otpx-tabs button{
+    white-space:nowrap;
+    font-size:11px;
+  }
+
+  .otpx-head{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+
+  .otpx-inputs{
+    justify-content:space-between;
+    gap:6px;
+  }
+
+  .otpx-inputs input{
+    width:42px;
+    height:42px;
+    font-size:16px;
+  }
+
+  .otpx-security{
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+  }
+
+  .otpx-links{
+    flex-direction:column;
+  }
+
+  .otpx-footer{
+  width:100%;
+  position:static;
+
+  margin-top:20px;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+
+  text-align:center;
+
+  gap:10px;
+}
+
+  .otpx-footer div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
+
+  .otpx-footer a{
+    margin-left:0;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width:380px){
+
+  .otpx-card{
+    padding:16px;
+  }
+
+  .otpx-inputs input{
+    width:38px;
+    height:38px;
+    font-size:15px;
+  }
+
+  .otpx-btn{
+    height:46px;
+    font-size:14px;
+  }
+
+  .otpx-security{
+    font-size:9px;
+  }
+
+  .otpx-footer{
+    font-size:10px;
+  }
 }

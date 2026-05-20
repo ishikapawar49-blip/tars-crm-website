@@ -1,7 +1,7 @@
 .loginx-page{
   width:100%;
   height:100vh;
-  overflow:hidden;
+  /* overflow:hidden; */
   display:grid;
   grid-template-columns:56% 44%;
   background:#f8fafc;
@@ -243,11 +243,12 @@
 /* RIGHT */
 
 .loginx-right{
-  height:100vh;
-  padding:8px 34px;
+  min-height:100vh;
+  padding:5px 34px;
   display:flex;
   flex-direction:column;
-  overflow:hidden;
+
+  /* overflow:hidden; */
 }
 
 .loginx-top-icons{
@@ -271,7 +272,7 @@
   background:white;
   border:1px solid #e6edf7;
   border-radius:28px;
-  padding:5px 28px;
+  padding:8px 28px;
   transform:scale(.90);
   transform-origin:center;
 }
@@ -279,13 +280,13 @@
 .loginx-card h2{
   font-size:42px;
   color:#071133;
-  margin-bottom:4px;
+  margin-bottom:0px;
 }
 
 .loginx-card p{
   color:#667085;
   font-size:15px;
-  margin-bottom:18px;
+  margin-bottom:8px;
 }
 
 .loginx-card label{
@@ -294,7 +295,7 @@
   font-weight:600;
   color:#344054;
   margin-bottom:8px;
-  margin-top:14px;
+  margin-top:4px;
 }
 
 .loginx-input{
@@ -408,3 +409,212 @@
 
 
 /* RESPONSIVE */
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (max-width: 1400px){
+
+  .loginx-content{
+    padding:34px 36px 26px;
+  }
+
+  .loginx-content h1{
+    font-size:38px;
+  }
+
+  .loginx-card{
+    transform:scale(.95);
+  }
+}
+
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width: 1200px){
+
+  .loginx-page{
+    grid-template-columns:52% 48%;
+  }
+
+  .loginx-content h1{
+    font-size:34px;
+  }
+
+  .loginx-content p{
+    font-size:15px;
+  }
+
+  .loginx-card h2{
+    font-size:34px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 992px){
+
+  .loginx-page{
+    grid-template-columns:1fr;
+  }
+
+  .loginx-left{
+    display:none;
+  }
+
+  .loginx-right{
+    padding:24px;
+    justify-content:center;
+  }
+
+  .loginx-card{
+    max-width:620px;
+    margin:auto;
+    transform:none;
+  }
+
+  .loginx-footer-links{
+    margin-top:24px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+  .loginx-right{
+    padding:20px;
+  }
+
+  .loginx-card{
+    padding:24px;
+    border-radius:24px;
+  }
+
+  .loginx-card h2{
+    font-size:32px;
+  }
+
+  .loginx-card p{
+    font-size:14px;
+  }
+
+  .loginx-socials{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px){
+  .loginx-top-icons{
+    margin-bottom:16px;
+  }
+
+   .loginx-page{
+    min-height:100vh;
+    display:block;
+  }
+
+  .loginx-right{
+    min-height:auto;
+    height:auto;
+    padding:16px;
+  }
+
+  .loginx-card{
+    width:100%;
+    max-width:100%;
+    margin:0;
+
+    transform:none !important;
+  }
+
+  .loginx-card h2{
+    font-size:28px;
+  }
+
+  .loginx-card p{
+    font-size:13px;
+    line-height:1.6;
+  }
+
+  .loginx-input{
+    height:50px;
+  }
+
+  .loginx-input input{
+    font-size:14px;
+  }
+
+  .loginx-options{
+    font-size:12px;
+  }
+
+  .loginx-login-btn{
+    height:52px;
+    font-size:15px;
+  }
+
+  .loginx-socials{
+    grid-template-columns:1fr;
+  }
+
+  .loginx-socials button,
+  .loginx-sso-btn{
+    height:48px;
+  }
+
+  .loginx-register{
+    font-size:13px;
+  }
+
+  .loginx-footer-links{
+    flex-wrap:wrap;
+    gap:12px;
+    text-align:center;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px){
+
+  .loginx-right{
+    padding:12px;
+  }
+
+  .loginx-card{
+    padding:16px;
+  }
+
+  .loginx-card h2{
+    font-size:24px;
+  }
+
+  .loginx-card label{
+    font-size:12px;
+  }
+
+  .loginx-input{
+    height:46px;
+  }
+
+  .loginx-footer-links{
+    font-size:11px;
+  }
+}
