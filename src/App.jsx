@@ -22,6 +22,7 @@ import Signup from "./pages/Auth/Signup";
 import ForgotPassword from "./pages/Auth/ForgotPassword";
 import ResetPassword from "./pages/Auth/ResetPassword";
 import OTPVerification from "./pages/Auth/OTPVerification";
+import TwoFactorAuth from "./pages/Auth/TwoFactorAuth";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword /> } />
         <Route path="/reset-password" element={<ResetPassword /> } />
         <Route path="/otp-verification" element={<OTPVerification /> } /> 
+        <Route path="/two-factor-auth" element={<TwoFactorAuth /> } />
         
       </Routes>
     </BrowserRouter>

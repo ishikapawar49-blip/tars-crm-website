@@ -56,7 +56,10 @@ const Navbar = () => {
   <a href="#">Integrations</a>
   <a href="#">Resources</a>
 
-  <button className="mobile-login-btn">
+  <button className="mobile-login-btn"
+    onClick={() => window.location.href = "/login"}
+
+  >
     Login
   </button>
 
