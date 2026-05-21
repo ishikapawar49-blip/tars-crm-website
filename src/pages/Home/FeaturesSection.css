@@ -1,7 +1,8 @@
 .features-section{
   width: 100%;
-  padding: 92px 64px;
-  background: #f8fafc;
+  padding: 42px 64px;
+  background: #f1f5f9;
+  margin-top: 0px;
 }
 
 /* TOP */
@@ -51,7 +52,7 @@
   font-size: 18px;
   line-height: 1.6;
   color: #667085;
-  margin-bottom: 64px;
+  margin-bottom: 30px;
 }
 
 /* GRID */
@@ -210,9 +211,9 @@
 
 @media (max-width: 1400px){
 
-  .features-section{
+  /* .features-section{
     padding: 84px 48px;
-  }
+  } */
 
   .features-title{
     font-size: 52px;

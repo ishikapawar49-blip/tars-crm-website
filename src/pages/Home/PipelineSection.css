@@ -1,6 +1,6 @@
 .pipe-section{
   width: 100%;
-  padding: 100px 14px;
+  padding: 46px 14px;
   background: #f8fafc;
 }
 
@@ -54,14 +54,10 @@
 .pipe-description{
   width: 760px;
   max-width: 100%;
-
-  margin: 24px auto 70px;
-
+  margin: 24px auto 30px;
   text-align: center;
-
   font-size: 18px;
   line-height: 1.7;
-
   color: #667085;
 }
 

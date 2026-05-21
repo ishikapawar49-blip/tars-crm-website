@@ -1,7 +1,7 @@
 .love-section{
   width:100%;
-  padding:60px 64px;
-  background:#f8fafc;
+  padding:50px 64px;
+  background:#f1f5f9;
 }
 
 .love-container{
@@ -35,7 +35,7 @@
   font-size:18px;
   color:#667085;
   max-width:760px;
-  margin:0 auto 64px;
+  margin:0 auto 34px;
   line-height:1.7;
 }
 
@@ -144,10 +144,10 @@
 ========================= */
 
 @media (max-width: 1400px){
-
+/* 
   .love-section{
     padding: 70px 48px;
-  }
+  } */
 
   .love-grid{
     gap: 18px;

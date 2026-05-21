@@ -1,6 +1,6 @@
 .pricing-section{
   width:100%;
-  padding:40px 64px;
+  padding:50px 64px;
   background:#f8fafc;
 }
 
@@ -42,7 +42,7 @@
   font-size:18px;
   color:#667085;
 
-  margin-bottom:28px;
+  margin-bottom:20px;
 }
 
 /* TOGGLE */
@@ -50,7 +50,7 @@
 .pricing-toggle{
   width:fit-content;
 
-  margin:0 auto 52px;
+  margin:0 auto 42px;
 
   padding:4px;
 
@@ -285,9 +285,9 @@
 
 @media (max-width: 1400px){
 
-  .pricing-section{
+  /* .pricing-section{
     padding: 50px 48px;
-  }
+  } */
 
   .pricing-heading{
     font-size: 48px;

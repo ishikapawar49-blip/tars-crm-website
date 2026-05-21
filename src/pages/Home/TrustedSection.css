@@ -1,7 +1,7 @@
 .trusted-section{
   width: 100%;
-  padding: 72px 0 82px;
-  background: #f8fafc;
+  padding: 52px 0 82px;
+  background: #f1f8ff;
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   color: #6b7280;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
 }
 
 /* MARQUEE */
