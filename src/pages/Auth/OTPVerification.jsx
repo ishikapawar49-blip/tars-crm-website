@@ -1,4 +1,6 @@
 import "./OTPVerification.css";
+import { useNavigate } from "react-router-dom";
+
 import shieldImage from "../../assets/security-shield.png";
 import {
   FiHelpCircle,
@@ -12,6 +14,8 @@ import {
 } from "react-icons/ri";
 
 const OTPVerification = () => {
+    const navigate = useNavigate();
+
   return (
     <div className="otpx-page">
 
@@ -123,7 +127,9 @@ const OTPVerification = () => {
 
           </div>
 
-          <button className="otpx-btn">
+          <button className="otpx-btn"
+            onClick={() => navigate("/two-factor-auth")}
+>
             Verify Identity →
           </button>
 

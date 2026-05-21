@@ -57,7 +57,7 @@ const TwoFactorAuth = () => {
             <div className="twoxfa-feature-card">
 
               <div className="twoxfa-feature-icon shield">
-                <RiShieldCheckLine />
+                <RiShieldCheckLine /> 
               </div>
 
               <div>

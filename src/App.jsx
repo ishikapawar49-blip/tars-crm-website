@@ -23,6 +23,7 @@ import ForgotPassword from "./pages/Auth/ForgotPassword";
 import ResetPassword from "./pages/Auth/ResetPassword";
 import OTPVerification from "./pages/Auth/OTPVerification";
 import TwoFactorAuth from "./pages/Auth/TwoFactorAuth";
+import InviteTeam from "./pages/Auth/InviteTeam";
 
 function App() {
   return (
@@ -57,7 +58,8 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword /> } />
         <Route path="/otp-verification" element={<OTPVerification /> } /> 
         <Route path="/two-factor-auth" element={<TwoFactorAuth /> } />
-        
+        <Route path="/invite-team" element={<InviteTeam /> } /> 
+
       </Routes>
     </BrowserRouter>
   );
